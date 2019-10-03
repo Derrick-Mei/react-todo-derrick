@@ -117,6 +117,8 @@ class App extends React.Component {
               <li>completed components page</li>
               <li>deleted components page</li>
             </ul>
+            <div>GitHub Repository</div>
+            <div>https://github.com/Derrick-Mei/react-todo-derrick</div>
       </div>
     );
   }

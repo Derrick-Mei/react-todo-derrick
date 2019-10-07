@@ -68,7 +68,7 @@ class App extends React.Component {
   };
 
   hardDelete = () => {
-    console.log("hard Delete")
+    console.log("hard Delete");
     let rfcTodoList = this.state.rfcTodoList;
     let rccTodoList = this.state.rccTodoList;
     Object.keys(rfcTodoList).map(id => {
@@ -110,15 +110,17 @@ class App extends React.Component {
         />
 
         <Route path="/form" render={props => <TodoForm addTodo={this.addTodo} safeDelete={this.safeDelete} undoDelete={this.undoDelete} hardDelete={this.hardDelete} {...props} />} />
-            <div>Things To do</div>
-            <ul>
-              <li>Regex search</li>
-              <li>String similarity search</li>
-              <li>completed components page</li>
-              <li>deleted components page</li>
-            </ul>
-            <div>GitHub Repository</div>
-            <div>https://github.com/Derrick-Mei/react-todo-derrick</div>
+        <div>Things To do</div>
+        <ul>
+          <li>Regex search</li>
+          <li>String similarity search</li>
+          <li>completed components page</li>
+          <li>deleted components page</li>
+        </ul>
+        <div>GitHub Repository</div>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Derrick-Mei/react-todo-derrick">
+          https://github.com/Derrick-Mei/react-todo-derrick
+        </a>
       </div>
     );
   }
